@@ -12,7 +12,7 @@ abstract public class r
       paper = Paper;
    }
    
-   abstract public double getValue();
+   abstract public double getValue(double theta);
    
    public void draw (double angleFrom, int angleTo)
    {
@@ -32,5 +32,5 @@ abstract public class r
       }
    }
    
-   public double getZero();
+   abstract public double getZero();
 }
