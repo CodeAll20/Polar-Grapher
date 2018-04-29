@@ -14,7 +14,7 @@ abstract public class r
    
    abstract public double getValue();
    
-   public void draw (double angleFrom, int angleTo, DrawingTool Pen, SketchPad Paper)
+   public void draw (double angleFrom, int angleTo)
    {
       //Here is the actual movement of the pen
       pen.up();
