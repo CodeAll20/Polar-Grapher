@@ -14,7 +14,7 @@ abstract public class r
    
    abstract public double getValue(double theta);
    
-   public void draw (double angleFrom, int angleTo)
+   final public void draw (double angleFrom, int angleTo)
    {
       //Here is the actual movement of the pen
       pen.up();
