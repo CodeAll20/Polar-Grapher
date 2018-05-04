@@ -4,15 +4,17 @@ import apcslib.*;
 abstract public class r 
 {
    private static DrawingTool pen;
-   private static  SketchPad paper;
+   private static SketchPad paper;
+   private static int sign;
    
-   public r (DrawingTool Pen, SketchPad Paper)
+   public r (DrawingTool Pen, SketchPad Paper, int Sign)
    {
       pen = Pen;
       paper = Paper;
+      sign = Sign;
    }
    
-   abstract public double getValue(double theta);
+   abstract public double getValue (double theta);
    
    final public void draw (double angleFrom, int angleTo)
    {
@@ -32,5 +34,5 @@ abstract public class r
       }
    }
    
-   abstract public double getZero();
+   abstract public double getZero ();
 }
