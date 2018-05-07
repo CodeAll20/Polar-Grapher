@@ -11,7 +11,7 @@ abstract public class r
    {
       pen = Pen;
       paper = Paper;
-      sign = Sign;
+      sign = Math.signum(Sign);
    }
    
    abstract public double getValue (double theta);
