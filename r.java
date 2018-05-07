@@ -14,6 +14,11 @@ abstract public class r
       sign = (int)Math.signum(Sign);
    }
    
+   public void flipSign ()
+   {
+      sign *= -1;
+   }
+   
    abstract public double getValue (double theta);
    
    final public void draw (double angleFrom, int angleTo)
@@ -33,6 +38,4 @@ abstract public class r
             pen.down();
       }
    }
-   
-   abstract public double getZero ();
 }
