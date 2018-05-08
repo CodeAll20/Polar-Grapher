@@ -19,9 +19,9 @@ abstract public class r
       sign *= -1;
    }
    
-   abstract public double getValue (double theta);
+   abstract public double getValue(double theta);
    
-   final public void draw (double angleFrom, int angleTo)
+   public void draw (double angleFrom, int angleTo)
    {
       //Here is the actual movement of the pen
       pen.up();
