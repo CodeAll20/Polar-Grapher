@@ -32,12 +32,12 @@ public class circle extends r
          
          case 'x':
          case 'X':
-            value = Math.cos(theta);
+            value = a * Math.cos(theta);
             break;
          
          case 'Y':
          case 'y':
-            value = Math.sin(theta);
+            value = a * Math.sin(theta);
             break;
       }
       
