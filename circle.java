@@ -39,6 +39,9 @@ public class circle extends r
          case 'y':
             value = getSign() * a * Math.sin(theta);
             break;
+         
+         default:
+            break;
       }
       
       return value;
