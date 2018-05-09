@@ -38,4 +38,6 @@ abstract public class r
             pen.down();
       }
    }
+   
+   abstract String toString();
 }
