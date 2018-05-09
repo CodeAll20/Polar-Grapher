@@ -29,7 +29,6 @@ public class rose extends r
       
       if (isSin)
          value = a * Math.sin(b * theta);
-         
       else
          value = a * Math.cos(b * theta);
       
