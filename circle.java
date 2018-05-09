@@ -27,17 +27,17 @@ public class circle extends r
       switch (align)
       {
          case '0':
-            value = a;
+            value = getSign() * a;
             break;
          
          case 'x':
          case 'X':
-            value = a * Math.cos(theta);
+            value = getSign() * a * Math.cos(theta);
             break;
          
          case 'Y':
          case 'y':
-            value = a * Math.sin(theta);
+            value = getSign() * a * Math.sin(theta);
             break;
       }
       
