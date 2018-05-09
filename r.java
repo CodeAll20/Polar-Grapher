@@ -14,6 +14,11 @@ abstract public class r implements Function
       sign = (int)Math.signum(Sign);
    }
    
+   public int getSign ()
+   {
+      return sign;
+   }
+   
    public void flipSign ()
    {
       sign *= -1;
