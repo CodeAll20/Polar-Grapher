@@ -49,8 +49,14 @@ public class circle extends r
    
    public String toString ()
    {
-      return "Radius: " + (a / 2) + "\n" +
-             "Circumference: " + (Math.PI * a) + "\n" +
-             "Area: " + (Math.PI * Math.pow(a, 2));
+      String Return = "Radius: " + (a / 2) + "\n" +
+                      "Circumference: " + (Math.PI * a) + "\n" +
+                      "Area: " + (Math.PI * Math.pow(a, 2)) + "\n";
+      if (align == '0')
+         Return += "Alignment of Function: Origin\n";
+      else
+         Return += "Alignment of Function: " + align + "-axis\n";
+      
+      return Return;
    }
 }
