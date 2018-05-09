@@ -1,7 +1,7 @@
 import java.util.*;
 import apcslib.*;
 
-abstract public class r 
+abstract public class r implements Function
 {
    private static DrawingTool pen;
    private static SketchPad paper;
