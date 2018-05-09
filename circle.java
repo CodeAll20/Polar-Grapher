@@ -43,4 +43,11 @@ public class circle extends r
       
       return value;
    }
+   
+   public String toString ()
+   {
+      return "Radius: " + (a / 2) + "\n" +
+             "Circumference: " + (Math.PI * a) + "\n" +
+             "Area: " + (Math.PI * Math.pow(a, 2));
+   }
 }
