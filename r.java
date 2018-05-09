@@ -39,5 +39,5 @@ abstract public class r
       }
    }
    
-   abstract String toString();
+   abstract public String toString();
 }
