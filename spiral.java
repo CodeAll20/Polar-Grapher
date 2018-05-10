@@ -21,7 +21,7 @@ public class spiral extends circle
    {
       double value = 0;
       
-      value = a * theta + c;
+      value = getA() * theta + c;
       
       return value;
    }
@@ -30,10 +30,10 @@ public class spiral extends circle
    {
       String Return = "";
       
-      if (a > 0)
-         Return += "This spiral is positive and starts at (" + C + ", 0)\n";
-      else if (a < 0)
-         Return += "This spiral is negative and starts at (" + C + ", 0)\n";
+      if (getA() > 0)
+         Return += "This spiral is positive and starts at (" + c + ", 0)\n";
+      else if (getA() < 0)
+         Return += "This spiral is negative and starts at (" + c + ", 0)\n";
       
       return Return;
    }
