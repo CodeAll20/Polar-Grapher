@@ -1,14 +1,14 @@
 import java.util.*;
 import apcslib.*;
 
-public class spiral extends r
+public class spiral extends circle
 {
-   private int a;
+   private int b;
    
    public spiral (DrawingTool Pen, SketchPad Paper)
    {
-      super(Pen, Paper);
-      a = 1;
+      super(Pen, Paper, 1);
+      b = 1;
    }
    
    public spiral (DrawingTool Pen, SketchPad Paper, int A, boolean IsCsc)
