@@ -23,7 +23,7 @@ public class rose extends r
       isSin = IsSin;
    }
    
-   public double getValue(double theta)
+   public double getValue (double theta)
    {
       double value = 0;
       
