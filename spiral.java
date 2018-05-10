@@ -3,25 +3,25 @@ import apcslib.*;
 
 public class spiral extends circle
 {
-   private int b;
+   private int c;
    
    public spiral (DrawingTool Pen, SketchPad Paper)
    {
-      super(Pen, Paper, 1);
-      b = 1;
+      super(Pen, Paper);
+      c = 1;
    }
    
-   public spiral (DrawingTool Pen, SketchPad Paper, int A, boolean IsCsc)
+   public spiral (DrawingTool Pen, SketchPad Paper, int A, int C)
    {
-      super(Pen, Paper);
-      a = A;
+      super(Pen, Paper, A, '0');
+      c = C;
    }
    
    public double getValue (double theta)
    {
       double value = 0;
       
-      value = a * theta;
+      value = a * theta + c;
       
       return value;
    }
@@ -31,9 +31,9 @@ public class spiral extends circle
       String Return = "";
       
       if (a > 0)
-         Return += "Start: Down\n";
+         Return += "This spiral is positive and starts at (" + C + ", 0)\n";
       else if (a < 0)
-         Return += "Start: Up\n";
+         Return += "This spiral is negative and starts at (" + C + ", 0)\n";
       
       return Return;
    }
