@@ -30,9 +30,9 @@ public class limacon extends rose
       String Return = "";
       
       if (getIsSin())
-         Return += "Intersects y-axis at y = 0 and y = " + (a - b) + "\n";
+         Return += "Intersects y-axis at y = 0 and y = " + (getA() - getB()) + "\n";
       else
-         Return += "Intersects x-axis at x = 0 and x = " + (a - b) + "\n";
+         Return += "Intersects x-axis at x = 0 and x = " + (getA() - getB()) + "\n";
       
       if (Math.abs(getB() / getA()) >= 1)
          Return += "Has no dip or loop\n";
