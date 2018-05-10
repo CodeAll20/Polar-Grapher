@@ -9,15 +9,15 @@ public class rose extends r
    
    public rose (DrawingTool Pen, SketchPad Paper)
    {
-      super(Pen, Paper, 1);
+      super(Pen, Paper);
       a = 1;
       b = 2;
       isSin = true;
    }
    
-   public rose (DrawingTool Pen, SketchPad Paper, int Sign, int A, int B, boolean IsSin)
+   public rose (DrawingTool Pen, SketchPad Paper, int A, int B, boolean IsSin)
    {
-      super(Pen, Paper, Sign);
+      super(Pen, Paper);
       a = A;
       b = B;
       isSin = IsSin;
@@ -37,12 +37,12 @@ public class rose extends r
    
    public String toString ()
    {
-      String Return = "Length of one petal: " + (a / 2) + "\n";                      
+      String Return = "Length of one petal: " + (Math.abs(a) / 2) + "\n";                      
       
       if (a % 2 == 0)
-         Return += "Number of Petals: " + (2 * a) + "\n";
+         Return += "Number of Petals: " + (2 * Math.abs(a)) + "\n";
       else
-         Return += "Number of Petals: " + a + "\n";
+         Return += "Number of Petals: " + Math.abs(a) + "\n";
       
       if (isSin)
          Return += "Alignment: y-axis\n";
