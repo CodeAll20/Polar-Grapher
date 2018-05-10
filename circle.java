@@ -20,6 +20,11 @@ public class circle extends r
       align = Align;
    }
    
+   public int getA ()
+   {
+      return a;
+   }
+   
    public double getValue (double theta)
    {
       double value = 0;
