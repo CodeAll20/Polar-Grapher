@@ -23,6 +23,21 @@ public class rose extends r
       isSin = IsSin;
    }
    
+   public int getA ()
+   {
+      return a;
+   }
+   
+   public int getB ()
+   {
+      return b;
+   }
+   
+   public boolean getTrig ()
+   {
+      return isSin;
+   }
+   
    public double getValue (double theta)
    {
       double value = 0;
