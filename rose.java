@@ -33,7 +33,7 @@ public class rose extends r
       return b;
    }
    
-   public boolean getTrig ()
+   public boolean getIsSin ()
    {
       return isSin;
    }
