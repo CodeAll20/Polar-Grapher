@@ -31,9 +31,9 @@ public class spiral extends r
       String Return = "";
       
       if (a > 0)
-         Return += "Rotation: Clockwise\n";
+         Return += "Start: Down\n";
       else if (a < 0)
-         Return += "Rotation: Counterclockwise\n";
+         Return += "Start: Up\n";
       
       return Return;
    }
