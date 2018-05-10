@@ -39,7 +39,7 @@ public class rose extends r
    {
       String Return = "Length of one petal: " + (Math.abs(a) / 2) + "\n";                      
       
-      if (a % 2 == 0)
+      if (Math.abs(a) % 2 == 0)
          Return += "Number of Petals: " + (2 * Math.abs(a)) + "\n";
       else
          Return += "Number of Petals: " + Math.abs(a) + "\n";
