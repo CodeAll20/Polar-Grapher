@@ -8,14 +8,14 @@ public class lemniscate extends r
    
    public lemniscate (DrawingTool Pen, SketchPad Paper)
    {
-      super(Pen, Paper, 1);
+      super(Pen, Paper);
       a = 1;
       isSin = true;
    }
    
-   public lemniscate (DrawingTool Pen, SketchPad Paper, int Sign, int A, boolean IsSin)
+   public lemniscate (DrawingTool Pen, SketchPad Paper, int A, boolean IsSin)
    {
-      super(Pen, Paper, Sign);
+      super(Pen, Paper);
       a = A;
       isSin = IsSin;
    }
