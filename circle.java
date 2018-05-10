@@ -8,14 +8,14 @@ public class circle extends r
    
    public circle (DrawingTool Pen, SketchPad Paper)
    {
-      super(Pen, Paper, 1);
+      super(Pen, Paper);
       a = 1;
       align = '0';
    }
    
-   public circle (DrawingTool Pen, SketchPad Paper, int Sign, int A, char Align)
+   public circle (DrawingTool Pen, SketchPad Paper, int A, char Align)
    {
-      super(Pen, Paper, Sign);
+      super(Pen, Paper);
       a = A;
       align = Align;
    }
@@ -27,17 +27,17 @@ public class circle extends r
       switch (align)
       {
          case '0':
-            value = getSign() * a;
+            value = a;
             break;
          
          case 'x':
          case 'X':
-            value = getSign() * a * Math.cos(theta);
+            value = a * Math.cos(theta);
             break;
          
          case 'Y':
          case 'y':
-            value = getSign() * a * Math.sin(theta);
+            value = a * Math.sin(theta);
             break;
          
          default:
@@ -49,8 +49,8 @@ public class circle extends r
    
    public String toString ()
    {
-      String Return = "Radius: " + (a / 2) + "\n" +
-                      "Circumference: " + (Math.PI * a) + "\n" +
+      String Return = "Radius: " + (Math.abs(a) / 2) + "\n" +
+                      "Circumference: " + (Math.PI * Math.abs(a)) + "\n" +
                       "Area: " + (Math.PI * Math.pow(a, 2)) + "\n";
       if (align == '0')
          Return += "Alignment of Function: Origin\n";
