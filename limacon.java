@@ -9,15 +9,15 @@ public class limacon extends r
    
    public limacon (DrawingTool Pen, SketchPad Paper)
    {
-      super(Pen, Paper, 1);
+      super(Pen, Paper);
       a = 1;
       b = 2;
       isSin = true;
    }
    
-   public limacon (DrawingTool Pen, SketchPad Paper, int Sign, int A, int B, boolean IsSin)
+   public limacon (DrawingTool Pen, SketchPad Paper, int A, int B, boolean IsSin)
    {
-      super(Pen, Paper, Sign);
+      super(Pen, Paper);
       a = A;
       b = B;
       isSin = IsSin;
@@ -39,9 +39,9 @@ public class limacon extends r
    {
       String Return = "";                      
       
-      if (b / a >= 1)
+      if (Math.abs(b / a) >= 1)
          Return += "Has no dip or loop\n";
-      else if (b / a == 1)
+      else if (Math.abs(b / a) == 1)
          Return += "Has a dip\n";
       else
          Return += "Has a loop\n";
