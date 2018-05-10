@@ -17,7 +17,7 @@ public class limacon extends rose
    {
       double value = 0;
       
-      if (isSin)
+      if (getIsSin())
          value = getB() + getA() * Math.sin(theta);
       else
          value = getB() + getA() * Math.cos(theta);
