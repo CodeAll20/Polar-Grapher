@@ -20,7 +20,7 @@ public class circle extends r
       align = Align;
    }
    
-   public double getValue(double theta)
+   public double getValue (double theta)
    {
       double value = 0;
       
