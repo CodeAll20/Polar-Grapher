@@ -5,23 +5,11 @@ abstract public class r implements Function
 {
    private static DrawingTool pen;
    private static SketchPad paper;
-   private static int sign;
    
-   public r (DrawingTool Pen, SketchPad Paper, int Sign)
+   public r (DrawingTool Pen, SketchPad Paper)
    {
       pen = Pen;
       paper = Paper;
-      sign = (int)Math.signum(Sign);
-   }
-   
-   public int getSign ()
-   {
-      return sign;
-   }
-   
-   public void flipSign ()
-   {
-      sign *= -1;
    }
    
    abstract public double getValue(double theta);
