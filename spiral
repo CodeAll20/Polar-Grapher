@@ -1,0 +1,39 @@
+import java.util.*;
+import apcslib.*;
+
+public class spiral extends circle
+{
+   private int a;
+   private char align;
+   private int c;
+   
+   public spiral (DrawingTool Pen, SketchPad Paper)
+   {
+      super(Pen, Paper, 1, 1, '0');
+      c = 0;
+   }
+   
+   public spiral (DrawingTool Pen, SketchPad Paper, int Sign, int A, char Align, int C)
+   {
+      super(Pen, Paper, Sign, A, Align);
+      c = C;
+   }
+   
+   public double getValue(double theta)
+   {
+      double value = 0;
+      return value * theta + c;
+   }
+   
+   public String toString ()
+   {
+      String Return = "";
+      
+      if(a>0)
+         Return += "This spiral is positive and starts at (0," + c + ")";
+      else
+         Return += "This spiral is negative and starts at (0," + c + ")";
+            
+      return Return;
+   }
+}
