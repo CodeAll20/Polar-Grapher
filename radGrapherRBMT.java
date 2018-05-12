@@ -24,20 +24,12 @@ public class radGrapherRBMT
       int g = 0;
       String cPick = "";
       
-      r r1 = new circle (Pen, Paper, 10, '1');
+      r r1 = new circle (Pen, Paper, 100, '1');
       
       funList.add(r1);
-      r1.draw(-5.5, 5);
+      r1.draw(-300, 300);
      
-      /*for (int i = 0; i < funArray.length; i++)
-      funArray[i] = new circle (Pen, Paper, 1, '1');*/
-      
-     /* for(r rs: funArray) 
-      {
-      rs.draw(-55.5, 55);
-      }*/
-      
-      
+          
       while(pick < 6)
       {
          System.out.println(" Welcome to Polar Grapher!");
