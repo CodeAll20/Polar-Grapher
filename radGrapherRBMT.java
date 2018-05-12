@@ -24,7 +24,7 @@ public class radGrapherRBMT
       int g = 0;
       String cPick = "";
       
-      r r1 = new circle (Pen, Paper, 1, '0');
+      r r1 = new circle (Pen, Paper, 100, '1');
       
       funList.add(r1);
       r1.draw(-300, 300);
