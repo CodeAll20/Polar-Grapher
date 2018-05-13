@@ -52,12 +52,12 @@ public class rose extends r
    
    public String toString ()
    {
-      String Return = "Length of one petal: " + ((double)Math.abs(a) / 2) + "\n";                      
+      String Return = "Length of one petal: " + ((double)Math.abs(a)) + "\n";                      
       
-      if (Math.abs(a) % 2 == 0)
-         Return += "Number of Petals: " + (2 * Math.abs(a)) + "\n";
+      if (Math.abs(b) % 2 == 0)
+         Return += "Number of Petals: " + (2 * Math.abs(b)) + "\n";
       else
-         Return += "Number of Petals: " + Math.abs(a) + "\n";
+         Return += "Number of Petals: " + Math.abs(b) + "\n";
       
       if (isSin)
          Return += "Alignment: y-axis\n";
