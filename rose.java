@@ -52,7 +52,7 @@ public class rose extends r
    
    public String toString ()
    {
-      String Return = "Length of one petal: " + (Math.abs(a) / 2) + "\n";                      
+      String Return = "Length of one petal: " + ((double)Math.abs(a) / 2) + "\n";                      
       
       if (Math.abs(a) % 2 == 0)
          Return += "Number of Petals: " + (2 * Math.abs(a)) + "\n";
