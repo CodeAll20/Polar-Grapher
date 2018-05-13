@@ -365,7 +365,6 @@ public class radGrapherRBMT
                }
                
              System.out.println(" Your color has been set");
-             sc.nextLine();
              break;  
              
          case 5:  
