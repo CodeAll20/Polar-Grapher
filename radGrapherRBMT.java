@@ -261,7 +261,7 @@ public class radGrapherRBMT
                   }
                   else if (ePick == 4)
                   {
-                     System.out.println(" The equation of a rose is r = a + b sin(theta) or r = a + b cos(theta) ");
+                     System.out.println(" The equation of a rose is r = a + sin(b * theta) or r = a + cos(b * theta) ");
                      System.out.println(" Enter values for a, b, and pick sine or cosine ");
                      System.out.println(" a = ");
                      A = Integer.parseInt(sc.nextLine());
